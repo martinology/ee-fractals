@@ -24,10 +24,11 @@ linear extension of the trunk (Riddler, 2022). For the first branches, each has 
 two branches split into two more branches (also called the second branches) with length S2. From this, a subtree is
 formed at every branch.
 <details>
-<summary>
 ```
 def tree(trunk, scaling, angle)
 ```
+<summary>
+more...
 </summary>
 ```
 branch = trunk * scaling
@@ -45,10 +46,11 @@ inducing a random characteristic to each of these variables such as by adding or
 of the variables. As such, we may define the tree with another variable: randomness.
 <details>
 
-<summary>
 ```
 def tree(trunk, scaling, angle, randomness)
 ```
+<summary>
+more...
 </summary>
 
 ```
