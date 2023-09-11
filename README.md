@@ -23,7 +23,17 @@ line segment of length 1, or also called trunk, will split into two branches at 
 linear extension of the trunk (Riddler, 2022). For the first branches, each has length S. Following that, each of these
 two branches split into two more branches (also called the second branches) with length S2. From this, a subtree is
 formed at every branch.
+```
+def tree(trunk, scaling, angle)
+```
 
+```
+branch = trunk * scaling
+```
+
+```
+tree(branch, scaling, angle)
+```
 ## Real (Randomized) Binary Tree
 
 The IFS of the Binary Tree yields an image of a tree that does not look natural or realistic due to the consistency of the
@@ -32,4 +42,19 @@ inducing a random characteristic to each of these variables such as by adding or
 of the variables. As such, we may define the tree with another variable: randomness.
 ```
 def tree(trunk, scaling, angle, randomness)
+```
+```
+if randomness > 0:
+    # adds variation to the length of the branch
+    branch *= random.uniform(0.9, 1.1)
+    # adds variation to angle by adding a random value in a set with mean = 0 and
+standard dev = randomness
+```
+```
+angle_left = angle + random.gauss(0, randomness)
+
+angle_right = angle + random.gauss(0, randomness)
+```
+```
+tree(branch, scaling, angle, randomness)
 ```
