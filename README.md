@@ -4,12 +4,32 @@ For my International Baccalaureate Diploma Programme Extended Essay, I chose to 
 
 ## Koch Curve
 
+The Koch Curve is formed by taking four copies of the unit horizontal line segment, each scaled by 1/3.
+Then, the 2nd of the 4 segments (from left to right) is rotated 60°mcounter-clockwise while the 3rd of the 4 segments is
+rotated 60° clockwise. With more iterations towards the Koch Curve, the length of this curve increases. Hence, it is a fractal with infinite length. 
+
+## Koch Snowflake
+
+Some fractals can have the characteristic of being self-contacting, meaning that even when
+more iterations occur, the fractal will not exceed a boundary that is intrinsic to the fractal and its conditions. This is closely tied to the special properties of most self-similar fractals: finite area and infinite
+perimeter. An example of a fractal that clearly displays these properties is the Koch Snowflake, an enclosed figure
+by three identical sides with the structure identical to that of Koch Curve’s. 
 
 ## Binary Tree
 
-Another example is the symmetric Binary Tree, a more flexible type of fractal as it works for any angle θ where
+The Simple (Symmetric) Binary Tree is a more flexible type of fractal as it works for any angle θ where
 0° < θ < 180° and any scaling factor S where 0 < S < 1. To generate the simplest version of this fractal, a vertical
 line segment of length 1, or also called trunk, will split into two branches at the top that form an angle of θ with the
 linear extension of the trunk (Riddler, 2022). For the first branches, each has length S. Following that, each of these
 two branches split into two more branches (also called the second branches) with length S2. From this, a subtree is
-formed at every branch
+formed at every branch.
+
+## Real (Randomized) Binary Tree
+
+The IFS of the Binary Tree yields an image of a tree that does not look natural or realistic due to the consistency of the
+values of the branch length, scaling factor S, and angle θ throughout the iterations. We can introduce variation by
+inducing a random characteristic to each of these variables such as by adding or multiplying a random value to each
+of the variables. As such, we may define the tree with another variable: randomness.
+```
+def tree(trunk, scaling, angle, randomness)
+```
