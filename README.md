@@ -23,10 +23,12 @@ line segment of length 1, or also called trunk, will split into two branches at 
 linear extension of the trunk (Riddler, 2022). For the first branches, each has length S. Following that, each of these
 two branches split into two more branches (also called the second branches) with length S2. From this, a subtree is
 formed at every branch.
-<details>
+
 ```
 def tree(trunk, scaling, angle)
 ```
+<details>
+
 <summary>
 more...
 </summary>
@@ -44,11 +46,11 @@ The IFS of the Binary Tree yields an image of a tree that does not look natural 
 values of the branch length, scaling factor S, and angle θ throughout the iterations. We can introduce variation by
 inducing a random characteristic to each of these variables such as by adding or multiplying a random value to each
 of the variables. As such, we may define the tree with another variable: randomness.
-<details>
 
 ```
 def tree(trunk, scaling, angle, randomness)
 ```
+<details>
 <summary>
 more...
 </summary>
