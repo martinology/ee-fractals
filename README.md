@@ -32,6 +32,7 @@ def tree(trunk, scaling, angle)
 <summary>
 more...
 </summary>
+
 ```
 branch = trunk * scaling
 ```
@@ -50,6 +51,7 @@ of the variables. As such, we may define the tree with another variable: randomn
 ```
 def tree(trunk, scaling, angle, randomness)
 ```
+
 <details>
 <summary>
 more...
@@ -62,6 +64,7 @@ if randomness > 0:
     # adds variation to angle by adding a random value in a set with mean = 0 and
 standard dev = randomness
 ```
+
 ```
 angle_left = angle + random.gauss(0, randomness)
 
